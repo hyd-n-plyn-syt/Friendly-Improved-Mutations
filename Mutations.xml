@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mutations>
+  <category Name="Physical">
+    <mutation Name="Multiple Arms" Hidden="true" ExcludeFromPool="true" />
+  </category>
+
+  <category Name="Physical">
+    <mutation Name="Multiple Arms (4)" Cost="4" MaxSelected="1" Class="Improved_MultipleArms" Variant="1" Exclusions="Armless,Multiple Arms,Multiple Arms (6),Multiple Arms (8)" BearerDescription="the four-armed" Tile="Mutations/multiple_arms.bmp" />
+    <mutation Name="Multiple Arms (6)" Cost="5" MaxSelected="1" Class="Improved_MultipleArms" Variant="2" Exclusions="Armless,Multiple Arms,Multiple Arms (4),Multiple Arms (8)" BearerDescription="the six-armed" Tile="Mutations/multiple_arms.bmp" />
+    <mutation Name="Multiple Arms (8)" Cost="6" MaxSelected="1" Class="Improved_MultipleArms" Variant="3" Exclusions="Armless,Multiple Arms,Multiple Arms (4),Multiple Arms (6)" BearerDescription="the eight-armed" Tile="Mutations/multiple_arms.bmp" />
+    <mutation Name="Multiple Legs" Cost="5" MaxSelected="1" Class="MultipleLegs" Exclusions="" Tile="Mutations/multiple_legs.bmp" />
+    <mutation Name="Stinger (Confusing Venom)" Cost="3" MaxSelected="1" Class="Stinger" Variant="Stinger Confusion" Exclusions="Stinger (Paralyzing Venom),Stinger (Poisoning Venom),Fluffy Tail,Thick Tail" Tile="Mutations/stinger.bmp" />
+    <mutation Name="Stinger (Paralyzing Venom)" Cost="4" MaxSelected="1" Class="Stinger" Variant="Stinger Paralysis" Exclusions="Stinger (Confusing Venom),Stinger (Poisoning Venom),Fluffy Tail,Thick Tail" Tile="Mutations/stinger.bmp" />
+    <mutation Name="Stinger (Poisoning Venom)" Cost="4" MaxSelected="1" Class="Stinger" Variant="Stinger Poison" Exclusions="Stinger (Confusing Venom),Stinger (Paralyzing Venom),Fluffy Tail,Thick Tail" Tile="Mutations/stinger.bmp" />
+    <mutation Name="Two-headed" Cost="3" MaxSelected="1" Class="MultipleHeads" Variant="1" Exclusions="Hydra Heads,Three-headed,Four-headed" Tile="Mutations/two-headed.bmp"  />
+    <mutation Name="Three-headed" Cost="4" MaxSelected="1" Class="MultipleHeads" Variant="2" Exclusions="Hydra Heads,Two-headed,Four-headed" BearerDescription="the three-headed" Tile="Mutations/two-headed.bmp" />
+    <mutation Name="Four-headed" Cost="5" MaxSelected="1" Class="MultipleHeads" Variant="3" Exclusions="Hydra Heads,Two-headed,Three-headed" BearerDescription="the four-headed" Tile="Mutations/two-headed.bmp" />
+    <mutation Name="Hydra Heads" Cost="3" MaxSelected="1" Class="HydraHeads" Exclusions="Two-headed,Three-headed,Four-headed,Regeneration,Immunocompromised" BearerDescription="those who regrow heads" Tile="Mutations/two-headed.bmp" />
+    <mutation Name="Animal Legs" Cost="2" MaxSelected="1" Class="AnimalLegs" Exclusions="Hooks for Feet,Snake Tail,Serpentine Form" BearerDescription="the light-footed" Tile="mutations/sw_paws.png" />
+    <mutation Name="Fluffy Tail" Cost="1" MaxSelected="1" Class="FluffyTail" Exclusions="Stinger (Confusing Venom),Stinger (Paralyzing Venom),Stinger (Poisoning Venom),Snake Tail,Thick Tail,Ovipositor" BearerDescription="those with furry tails" Tile="mutations/sw_tail.png" />
+    <mutation Name="Wings" Class="Improved_Wings" Load="Merge" />
+  </category>
+
+  <category Name="PhysicalDefects">
+    <mutation Name="Armless" Cost="-3" MaxSelected="1" Class="Armless" Exclusions="Multiple Arms,Multiple Arms (4),Multiple Arms (6),Multiple Arms (8)" BearerDescription="those without arms" />
+    <mutation Name="Hooks for Feet" Cost="-4" MaxSelected="1" Class="HooksForFeet2" Exclusions="Animal Legs" Tile="Mutations/hooks_for_feet.bmp" />
+    <mutation Name="Muzzle" Cost="-2" MaxSelected="1" Class="Muzzle" Exclusions="Beak" BearerDescription="those with muzzles" Tile="mutations/sw_muzzle.png" />
+  </category>
+</mutations>

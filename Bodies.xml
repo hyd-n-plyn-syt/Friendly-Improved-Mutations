@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<bodies Load="Replace">
+  <bodyparttypevariants>
+    <bodyparttypevariant VariantOf="Body" Type="Torso" Integral="False" Appendage="True" Branching="Lateral,Longitudinal,Stratal,Vertical" />
+    <!--LimbBlueprintProperty="SeveredTorsoBlueprint"-->
+  </bodyparttypevariants>
+</bodies>

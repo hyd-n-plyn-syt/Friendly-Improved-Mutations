@@ -1,0 +1,8 @@
+{
+  "WorkshopId": 3415337918,
+  "Title": "Friendly Improved Mutations",
+  "Description": "Just removes a few things from the mod Improved Mutations by Eboreg so that it will play nice with other popular mutation mods.\n\nRemoved:\nFlaming Ray/Freezing Ray, Poisonous Fangs, Scales, Snake Tail (and Constricted), and Thick Fur.\n\nTested with:\nWM Expanded Mutations, Friendly Graven's Mutation Mod, Miscellaneous Mutations, Poison/Paralysis/Confusing Fangs Mutations, Underdark Mutation\n\nDo not use with the original unless you like crashes. All credit goes to the original mod author.",
+  "Tags": "Mutation, Balance, Cheat",
+  "Visibility": "0",
+  "ImagePath": "preview.png"
+}

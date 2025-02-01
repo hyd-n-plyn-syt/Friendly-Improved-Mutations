@@ -1,0 +1,102 @@
+<objects Load="Merge">
+  <object Name="Snake Tail" Inherits="MeleeWeapon">
+    <part Name="NoBreak" />
+    <part Name="NoDamage" />
+    <part Name="NaturalEquipment" />
+    <part Name="MeleeWeapon" Slot="Feet" BaseDamage="1d2" Stat="Strength" Skill="Cudgel" />
+    <part Name="Armor" AV="0" DV="-2" WornOn="Feet" />
+    <part Name="Render" DisplayName="snake tail" RenderString="\" DetailColor="W" />
+    <part Name="Commerce" Value="0" />
+    <part Name="Description" Short="A lengthy, muscular tail that replaces one's legs. Can be used to suffocate enemies."></part>
+    <part Name="Physics" Category="Natural Armor" IsReal="false" Weight="0"></part>
+    <intproperty Name="Natural" Value="1" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="NaturalGear" />
+  </object>
+
+  <object Name="AnimalLegs" Inherits="Armor">
+    <part Name="NoBreak" />
+    <part Name="NoDamage" />
+    <part Name="NaturalEquipment" />
+    <part Name="Armor" AV="0" DV="0" WornOn="Feet" />
+    <part Name="Render" DisplayName="anthropomorphic legs" RenderString="*" Tile="mutations/sw_paw.png" TileColor="&amp;w" DetailColor="W" />
+    <part Name="Commerce" Value="0" />
+    <part Name="Description" Short="Legs shaped like those of an animal." />
+    <part Name="Physics" Category="Natural Armor" IsReal="false" Weight="0" />
+    <removepart Name="TinkerItem" />
+    <intproperty Name="Natural" Value="1" />
+    <tag Name="MutationEquipment" Value="AnimalLegs" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="NoDefaultBehavior" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="Gender" Value="plural" />
+    <tag Name="NaturalGear" />
+    <tag Name="VisibleAsDefaultBehavior" />
+    <tag Name="ShowAsPhysicalFeature" />
+  </object>
+  <object Name="Paws" Inherits="AnimalLegs">
+    <part Name="Render" DisplayName="paws" RenderString="*" Tile="Items/sw_horn.bmp" TileColor="&amp;w" DetailColor="W" />
+    <part Name="Description" Short="A set of soft, feline paws at the end of your legs." />
+  </object>
+  <object Name="Hooves" Inherits="AnimalLegs">
+    <part Name="Render" DisplayName="hoove" RenderString="*" Tile="Items/sw_horn.bmp" TileColor="&amp;w" DetailColor="W" />
+    <part Name="Description" Short="A set of hard, equine hooves at the end of your legs." />
+  </object>
+
+  <object Name="Muzzle" Inherits="MeleeWeapon">
+    <part Name="MeleeWeapon" Slot="Head" BaseDamage="2" Stat="Strength" Skill="ShortBlades" MaxStrengthBonus="100" />
+    <part Name="Armor" AV="0" DV="0" WornOn="Face" />
+    <part Name="Render" DisplayName="Muzzle" RenderString="*" Tile="mutations/sw_muzzle.png" TileColor="&amp;w" DetailColor="W" />
+    <part Name="Commerce" Value="0" />
+    <part Name="Description" Short="A muzzle." />
+    <part Name="NaturalEquipment" />
+    <part Name="NoDamage" />
+    <part Name="NoBreak" />
+    <part Name="Physics" Category="Natural Armor" IsReal="false" Weight="0" />
+    <part Name="HornsProperties" />
+    <removepart Name="TinkerItem" />
+    <intproperty Name="Natural" Value="1" />
+    <tag Name="MutationEquipment" Value="Muzzle" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="NoDefaultBehavior" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="Gender" Value="plural" />
+    <tag Name="NaturalGear" />
+    <tag Name="VisibleAsDefaultBehavior" />
+    <tag Name="ShowAsPhysicalFeature" />
+  </object>
+
+  <object Name="Fangs" Inherits="MeleeWeapon">
+    <part Name="Render" DisplayName="Fangs" RenderString="*" TileColor="&amp;w" DetailColor="W" />
+    <part Name="Commerce" Value="0" />
+    <part Name="Description" Short="A pair of long fangs." />
+    <part Name="NaturalEquipment" />
+    <part Name="NoBreak" />
+    <part Name="NoDamage" />
+    <part Name="Physics" Category="Natural Armor" IsReal="false" Weight="0" />
+    <part Name="PoisonOnHit" Chance="5" DamageIncrement="1d2" Duration="4-8" />
+    <removepart Name="TinkerItem" />
+    <intproperty Name="Natural" Value="1" />
+    <tag Name="MutationEquipment" Value="PoisonousFangs" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="NaturalGear" />
+    <tag Name="VisibleAsDefaultBehavior" />
+    <part Name="MeleeWeapon" Slot="Head" BaseDamage="2" Stat="Strength" Skill="ShortBlades" MaxStrengthBonus="20" />
+    <tag Name="Gender" Value="plural" />
+    <tag Name="ShowAsPhysicalFeature" />
+  </object>
+
+  <object Name="FluffyTail" Inherits="Armor">
+    <part Name="NoBreak"></part>
+    <part Name="NoDamage"></part>
+    <part Name="Armor" AV="0" DV="0" WornOn="Back"></part>
+    <part Name="Render" DisplayName="Fluffy Tail" RenderString="*" Tile="mutations/sw_tail.png" TileColor="&amp;w" DetailColor="W"></part>
+    <part Name="Commerce" Value="0"></part>
+    <part Name="Description" Short="A long, flexible tail covered in thick, wooly fluff."></part>
+    <part Name="Cursed"></part>
+    <part Name="Physics" Category="Natural Armor" IsReal="false" Weight="0"></part>
+    <property Name="Natural" Value="1"></property>
+  </object>
+</objects>
