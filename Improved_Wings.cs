@@ -114,7 +114,7 @@ namespace XRL.World.Parts.Mutation
 
 		public override IPart DeepCopy(GameObject Parent, Func<GameObject, GameObject> MapInv)
 		{
-			Wings wings = base.DeepCopy(Parent, MapInv) as Wings;
+			Improved_Wings wings = base.DeepCopy(Parent, MapInv) as Improved_Wings;
 			wings.WingsObject = null;
 			return wings;
 		}
